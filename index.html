@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bình M Phát - Giải Pháp Điện Mặt Trời Uy Tín</title>
+    <title>Bình M Phát - Dịch Vụ Điện Mặt Trời Uy Tín</title>
     <style>
         :root {
-            --primary: #c59b27;
-            --primary-dark: #a37f1d;
-            --secondary: #0f172a;
-            --light: #f8fafc;
-            --text: #334155;
+            --primary: #d4af37;
+            --primary-dark: #b89628;
+            --secondary: #1a1a1a;
+            --light: #f9f9f6;
+            --text: #222222;
         }
 
         * {
@@ -26,37 +26,37 @@
             line-height: 1.6;
         }
 
-        /* Header / Hero */
         header {
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+            background: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)), 
                         url('https://images.unsplash.com/photo-1509391365360-2e959784a276?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
             color: white;
             text-align: center;
-            padding: 90px 20px 70px;
+            padding: 70px 20px 60px;
         }
 
-        .avatar {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            border: 4px solid var(--primary);
-            object-fit: cover;
+        .logo {
+            width: 170px;
+            height: 170px;
+            border-radius: 16px;
+            border: 3px solid var(--primary);
             margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-            background-color: #a08836;
+            object-fit: cover;
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
         }
 
         header h1 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #fff;
+            margin-bottom: 8px;
+            color: #ffffff;
+            letter-spacing: 1px;
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--primary);
             font-weight: 600;
             margin-bottom: 25px;
+            text-transform: uppercase;
         }
 
         .btn-group {
@@ -69,7 +69,7 @@
         .btn {
             display: inline-block;
             background: var(--primary);
-            color: #fff;
+            color: #000;
             padding: 12px 28px;
             text-decoration: none;
             font-weight: bold;
@@ -79,6 +79,7 @@
 
         .btn-zalo {
             background: #0068ff;
+            color: #fff;
         }
 
         .btn:hover {
@@ -86,11 +87,10 @@
             transform: translateY(-2px);
         }
 
-        /* Container */
         .container {
             max-width: 1100px;
             margin: auto;
-            padding: 60px 20px;
+            padding: 50px 20px;
         }
 
         .section-title {
@@ -111,21 +111,21 @@
             border-radius: 2px;
         }
 
-        /* Highlight Warranty Banner */
         .warranty-banner {
-            background: linear-gradient(135deg, #c59b27, #a37f1d);
+            background: linear-gradient(135deg, #1a1a1a, #2c2a1e);
+            border: 2px solid var(--primary);
             color: white;
             text-align: center;
             padding: 35px 20px;
             border-radius: 15px;
             margin-bottom: 50px;
-            box-shadow: 0 10px 20px rgba(197, 155, 39, 0.25);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
 
         .warranty-banner h2 {
             font-size: 2.2rem;
+            color: var(--primary);
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         .warranty-banner p {
@@ -133,7 +133,6 @@
             margin-top: 8px;
         }
 
-        /* Benefits Grid */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -144,14 +143,14 @@
             background: white;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
             border-top: 4px solid var(--primary);
             transition: 0.3s;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
         }
 
         .card-icon {
@@ -165,25 +164,21 @@
             font-size: 1.3rem;
         }
 
-        /* About Section */
         .about-box {
             background: white;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 60px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            margin-bottom: 50px;
+            border-left: 5px solid var(--primary);
         }
 
-        /* Contact & Footer */
         footer {
             background: var(--secondary);
             color: white;
             text-align: center;
             padding: 50px 20px;
-        }
-
-        footer h2 {
-            margin-bottom: 15px;
+            border-top: 3px solid var(--primary);
         }
 
         .contact-card {
@@ -192,7 +187,7 @@
             padding: 25px 40px;
             border-radius: 12px;
             margin-top: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
         }
 
         .contact-info {
@@ -214,12 +209,11 @@
 </head>
 <body>
 
-    <!-- HERO SECTION -->
     <header>
-        <!-- Ảnh logo đã được tích hợp trực tiếp vào code dưới dạng chuỗi dữ liệu (Base64) -->
-        <img src="https://i.imgur.com/8QZ8X0A.jpg" alt="Logo Bình M Phát" class="avatar">
+        <!-- Ảnh logo được gọi trực tiếp bằng tên file logo.jpg -->
+        <img src="logo.jpg" alt="Bình M Phát Logo" class="logo" onerror="this.src='https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=200'">
         <h1>BÌNH M PHÁT</h1>
-        <p>Chuyên Gia Giải Pháp & Dịch Vụ Điện Mặt Trời Chuyên Nghiệp</p>
+        <p>Chuyên Dịch Vụ Điện Mặt Trời Uy Tín & Chuyên Nghiệp</p>
         <div class="btn-group">
             <a href="tel:0355567466" class="btn">📞 Gọi Ngay: 0355 567 466</a>
             <a href="https://zalo.me/0945778133" target="_blank" class="btn btn-zalo">💬 Zalo: 0945 778 133</a>
@@ -227,71 +221,58 @@
     </header>
 
     <div class="container">
-        
-        <!-- NỔI BẬT BẢO HÀNH -->
         <div class="warranty-banner">
             <h2>Cam Kết Bảo Hành Đến 15 Năm</h2>
-            <p>Đồng hành cùng công trình của bạn — An tâm tuyệt đối về chất lượng và hiệu suất vận hành lâu dài.</p>
+            <p>Đồng hành dài hạn cùng công trình — An tâm tuyệt đối về chất lượng & hiệu suất vận hành.</p>
         </div>
 
-        <!-- GIỚI THIỆU BẢN THÂN -->
         <div class="about-box">
             <h2 class="section-title">Về Tôi & Dịch Vụ</h2>
-            <p>Tôi là <strong>Bình M Phát</strong>, chuyên tư vấn, thiết kế và thi công hệ thống điện mặt trời tối ưu chi phí cho gia đình, xưởng sản xuất và doanh nghiệp. Với định hướng mang lại nguồn năng lượng sạch, bền vững và tiết kiệm, tôi cam kết mang tới giải pháp thi công chuẩn kỹ thuật, an toàn tuyệt đối và hiệu quả chuyển đổi tối đa.</p>
+            <p>Tôi là <strong>Bình M Phát</strong>, chuyên tư vấn, thiết kế và thi công hệ thống điện mặt trời tối ưu chi phí cho các hộ gia đình, nhà xưởng và doanh nghiệp. Với phương châm lấy uy tín làm đầu, tôi cam kết mang đến giải pháp chuẩn kỹ thuật, thi công an toàn và khai thác tối đa nguồn năng lượng sạch.</p>
         </div>
 
-        <!-- ƯU ĐIỂM ĐIỆN MẶT TRỜI -->
-        <h2 class="section-title">Tại Sao Nên Lắp Đặt Điện Mặt Trời?</h2>
+        <h2 class="section-title">Ưu Điểm Nổi Bật Của Điện Mặt Trời</h2>
         
         <div class="grid">
             <div class="card">
                 <div class="card-icon">⚡</div>
-                <h3>Cắt Giảm Tiền Điện 80 - 90%</h3>
-                <p>Tự chủ nguồn điện ban ngày, làm giảm đáng kể hóa đơn tiền điện hàng tháng cho hộ gia đình và doanh nghiệp.</p>
+                <h3>Tiết Kiệm 80 - 90% Tiền Điện</h3>
+                <p>Tự cung cấp điện năng vào ban ngày, cắt giảm đáng kể chi phí điện sinh hoạt và sản xuất.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">🛡️</div>
-                <h3>Bảo Hành Lên Đến 15 Năm</h3>
-                <p>Chế độ bảo hành dài hạn 15 năm đối với thiết bị chính và hỗ trợ kỹ thuật nhanh chóng, cam kết hiệu suất ổn định.</p>
+                <h3>Bảo Hành Uy Tín 15 Năm</h3>
+                <p>Chế độ bảo hành thiết bị dài hạn lên đến 15 năm, hỗ trợ kỹ thuật nhanh chóng khi cần.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">📈</div>
-                <h3>Đầu Tư Hoàn Vốn Nhanh</h3>
-                <p>Thời gian hoàn vốn nhanh (chỉ từ 3 - 5 năm), trong khi tuổi thọ toàn bộ hệ thống kéo dài hơn 25 - 30 năm.</p>
+                <h3>Đầu Tư Lời Lâu Dài</h3>
+                <p>Thời gian hoàn vốn nhanh (3 - 5 năm), trong khi tuổi thọ hệ thống đạt trên 25 - 30 năm.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">🌡️</div>
                 <h3>Chống Nóng Mái Nhà</h3>
-                <p>Hệ thống tấm pin mặt trời che chắn trực tiếp, giảm nhiệt độ mái nhà từ 3 - 5°C, làm mát không gian sống phía dưới.</p>
+                <p>Hệ thống pin mặt trời hấp thụ bức nhiệt, giúp giảm nhiệt độ cho ngôi nhà từ 3 - 5°C.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">🌿</div>
-                <h3>Năng Lượng Xanh Bền Vững</h3>
-                <p>Góp phần bảo vệ môi trường, giảm phát thải CO2 và nâng tầm giá trị thẩm mỹ, hiện đại cho công trình.</p>
+                <h3>Năng Lượng Xanh & Hiện Đại</h3>
+                <p>Nâng cao giá trị thẩm mỹ công trình và góp phần tích cực bảo vệ môi trường.</p>
             </div>
-
             <div class="card">
                 <div class="card-icon">🔄</div>
-                <h3>Hoạt Động Tự Động & Bền Bỉ</h3>
-                <p>Hệ thống vận hành thông minh, dễ dàng giám sát sản lượng điện thu được hàng ngày trực tiếp qua ứng dụng điện thoại.</p>
+                <h3>Giám Sát Thông Minh</h3>
+                <p>Hệ thống vận hành tự động, theo dõi sản lượng điện hàng ngày dễ dàng qua điện thoại.</p>
             </div>
         </div>
-
     </div>
 
-    <!-- FOOTER & LIÊN HỆ -->
-    <footer id="contact">
+    <footer>
         <h2>Liên Hệ Hợp Tác & Tư Vấn Chi Tiết</h2>
-        <p>Hãy để Bình M Phát giúp bạn khảo sát và tối ưu hóa chi phí năng lượng ngay hôm nay!</p>
-        
+        <p>Tư vấn & hỗ trợ khảo sát tận nơi hoàn toàn miễn phí!</p>
         <div class="contact-card">
-            <p class="contact-info">📞 Hotline Call: <a href="tel:0355567466">0355 567 466</a></p>
-            <p class="contact-info">💬 Chat Zalo: <a href="https://zalo.me/0945778133" target="_blank">0945 778 133</a></p>
-            <p style="margin-top: 10px; color: #cbd5e1;">📍 Hỗ trợ khảo sát & thi công toàn quốc</p>
+            <p class="contact-info">📞 Hotline: <a href="tel:0355567466">0355 567 466</a></p>
+            <p class="contact-info">💬 Zalo: <a href="https://zalo.me/0945778133" target="_blank">0945 778 133</a></p>
         </div>
     </footer>
 
