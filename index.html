@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bình M Phát - Dịch Vụ Điện Mặt Trời Chuyên Nghiệp</title>
+    <title>Bình M Phát - Dịch Vụ Điện Mặt Trời Chuyên Nghiệp & An Toàn</title>
     <!-- Favicon Logo hiển thị trên tab trình duyệt -->
     <link rel="icon" href="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" type="image/jpeg">
     <!-- Google Fonts -->
@@ -22,6 +22,7 @@
             --zalo-blue: #0068ff;
             --call-green: #22c55e;
             --light-bg: #f1f5f9;
+            --safe-blue: #0284c7;
         }
 
         * {
@@ -30,7 +31,7 @@
             box-sizing: border-box;
         }
 
-        /* HỌA TIẾT NỀN CHÌM SANG TRỌNG (LUXURY PATTERN) */
+        /* HỌA TIẾT NỀN CHÌM SANG TRỌNG */
         body {
             font-family: 'Roboto', sans-serif;
             background-color: var(--light-bg);
@@ -63,7 +64,6 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
-        /* Điểm nhấn Logo Chính diện */
         .logo-main-box {
             display: inline-block;
             background: rgba(15, 23, 42, 0.8);
@@ -160,7 +160,7 @@
             padding: 50px 20px;
         }
 
-        /* THẺ BẢO HÀNH CÓ WATERMARK LOGO */
+        /* THẺ BẢO HÀNH CÓ BỔ SUNG CÁC GÓI BẢO HÀNH LINH HOẠT & TTE-SAFE */
         .warranty-card {
             background: linear-gradient(135deg, #0f172a, #1e293b);
             border-radius: 20px;
@@ -189,17 +189,31 @@
         }
 
         .warranty-card h2 {
-            font-size: 2rem;
+            font-size: 1.9rem;
             color: var(--gold);
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             text-transform: uppercase;
         }
 
         .warranty-card p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #e2e8f0;
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 850px;
+            margin: 0 auto 20px;
+        }
+
+        /* HUY HIỆU CHUẨN AN TOÀN ĐIỆN TTE-SAFE */
+        .tte-badge-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(2, 132, 199, 0.2);
+            border: 1px solid #38bdf8;
+            padding: 8px 20px;
+            border-radius: 30px;
+            color: #7dd3fc;
+            font-size: 0.95rem;
+            font-weight: 700;
         }
 
         /* BỐ CỤC NỘI DUNG */
@@ -321,7 +335,7 @@
             font-weight: bold;
         }
 
-        /* KHU VỰC BIỂU TƯỢNG DỊCH VỤ SANG TRỌNG (THAY THẾ LƯỚI ẢNH CŨ) */
+        /* KHU VỰC BIỂU TƯỢNG DỊCH VỤ SANG TRỌNG & TỰ NÓI LÊN TIÊU CHUẨN Chuẩn Pháp Luật */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -381,7 +395,7 @@
             line-height: 1.4;
         }
 
-        /* KHỐI GIỚI THIỆU VỚI LOGO MINI */
+        /* KHỐI GIỚI THIỆU VỚI LOGO MINI & TTE-SAFE */
         .about-section {
             background: rgba(255, 255, 255, 0.95);
             padding: 35px;
@@ -554,10 +568,13 @@
 
     <div class="container">
 
-        <!-- THẺ BẢO HÀNH -->
+        <!-- THẺ BẢO HÀNH ĐÃ CẬP NHẬT GÓI BẢO HÀNH VÀ TTE-SAFE -->
         <div class="warranty-card">
-            <h2>🛡️ CAM KẾT BẢO HÀNH LÊN ĐẾN 15 NĂM</h2>
-            <p>Bình M Phát đồng hành cùng công trình của bạn suốt chặng đường dài. Cam kết thiết bị chính hãng 100%, hỗ trợ kỹ thuật tận nơi, đảm bảo hệ thống vận hành bền bỉ và đạt hiệu suất cao nhất!</p>
+            <h2>🛡️ ĐA DẠNG GÓI BẢO HÀNH LINH HOẠT - PIN BẢO HÀNH LÊN ĐẾN 15 NĂM</h2>
+            <p>Bình M Phát cung cấp các giải pháp bảo hành lâu dài phù hợp với từng quy mô công trình. Tấm pin mặt trời được hỗ trợ bảo hành chính hãng hiệu suất lên đến 15 năm, giúp quý khách hoàn toàn yên tâm đầu tư dài hạn.</p>
+            <div class="tte-badge-box">
+                ⚡ TÍCH HỢP HỆ THỐNG AN TOÀN ĐIỆN TTE-SAFE
+            </div>
         </div>
 
         <div class="section-header">
@@ -581,19 +598,19 @@
             </div>
         </div>
 
-        <!-- MỤC 2 -->
+        <!-- MỤC 2 (CẬP NHẬT TTE-SAFE CHO AN TOÀN ĐIỆN) -->
         <div class="feature-row reverse">
             <div class="feature-img-box">
                 <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=700&q=80" alt="Thi công giàn khung vững chắc">
             </div>
             <div class="feature-content">
-                <span class="badge-tag">An Toàn Tuyệt Đối</span>
-                <h3>Thi Công Giàn Khung Khóa Chắc Bền Bỉ</h3>
-                <p>Khung đỡ sử dụng chất liệu thép mạ kẽm/nhôm định hình chống gỉ sét cực cao, chịu đựng tốt sóng gió bão bùng. Quy trình gia cố áp mái được thực hiện tỉ mỉ chống rò rỉ nước 100%.</p>
+                <span class="badge-tag" style="background: rgba(2, 132, 199, 0.15); color: #0284c7;">Chuẩn TTE-SAFE</span>
+                <h3>An Toàn Điện Tuyệt Đối & Khung Đỡ Siêu Bền</h3>
+                <p>Mọi công trình đều tích hợp giải pháp an toàn điện TTE-SAFE: chống sét lan truyền, ngắt mạch tự động PVR. Giàn khung mạ kẽm chịu gió bão áp mái chống rò rỉ nước 100%.</p>
                 <ul class="feature-list">
+                    <li>Hệ thống chống rò rỉ điện và chập cháy chuẩn TTE-SAFE.</li>
                     <li>Khung dầm kiên cố, khả năng chịu lực bão tố.</li>
                     <li>Kỹ thuật gia cố chống thấm nước mái nhà tuyệt đối.</li>
-                    <li>Đảm bảo khoảng cách lưu thông gió làm mát pin.</li>
                 </ul>
             </div>
         </div>
@@ -632,16 +649,15 @@
             </div>
         </div>
 
-        <!-- TIÊU ĐỀ TIÊU CHUẨN DỊCH VỤ -->
+        <!-- TIÊU ĐỀ TIÊU CHUẨN ĐƯỢC ĐỔI TÊN THÀNH TIÊU CHUẨN THI CÔNG NGHIỆM THU (ĐÚNG LUẬT) -->
         <div class="section-header" style="margin-top: 50px;">
-            <div class="section-title">TIÊU CHUẨN THI CÔNG HÀNG ĐẦU</div>
+            <div class="section-title">TIÊU CHUẨN THI CÔNG & NGHIỆM THU</div>
         </div>
 
-        <!-- BỐ CỤC 4 Ô BIỂU TƯỢNG HOÀN TOÀN KHÔNG BỊ LỖI ẢNH -->
+        <!-- BỐ CỤC 4 Ô BIỂU TƯỢNG -->
         <div class="gallery-grid">
             <div class="gallery-card">
                 <div class="icon-wrapper">
-                    <!-- Icon Pin Mặt Trời -->
                     <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
                 </div>
                 <div class="gallery-info">
@@ -651,17 +667,15 @@
 
             <div class="gallery-card">
                 <div class="icon-wrapper">
-                    <!-- Icon Inverter/Thiết bị điện -->
                     <svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 2V13H10V22L17 11H14L17 2H7Z"/></svg>
                 </div>
                 <div class="gallery-info">
-                    <h4>Hệ Thống Inverter<br>Hòa Lưới An Toàn</h4>
+                    <h4>An Toàn Điện TTE-SAFE<br>& Inverter Hòa Lưới</h4>
                 </div>
             </div>
 
             <div class="gallery-card">
                 <div class="icon-wrapper">
-                    <!-- Icon Giàn Khung Vững Chắc -->
                     <svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 9H15V5H19V9ZM13 5V9H5V5H13ZM5 11H13V15H5V11ZM15 11H19V15H15V11ZM19 19H15V17H19V19ZM13 19H5V17H13V19Z"/></svg>
                 </div>
                 <div class="gallery-info">
@@ -671,7 +685,6 @@
 
             <div class="gallery-card">
                 <div class="icon-wrapper">
-                    <!-- Icon Bàn Giao Hoàn Hảo (Huy hiệu tích xanh) -->
                     <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 15.5L6 11.5L7.41 10.09L10 12.67L16.59 6.08L18 7.5L10 15.5Z"/></svg>
                 </div>
                 <div class="gallery-info">
@@ -685,7 +698,7 @@
             <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Mini" class="logo-mini">
             <div class="about-text">
                 <h3>Về Tôi - Bình M Phát</h3>
-                <p>Tôi trực tiếp tư vấn, khảo sát tận nơi và theo sát quá trình thi công để đảm bảo từng kết cấu khung đỡ, từng mối nối điện đều đạt chuẩn an toàn tuyệt đối. Sự tin tưởng của quý khách chính là uy tín lâu dài của tôi.</p>
+                <p>Tôi trực tiếp tư vấn, khảo sát tận nơi và theo sát quá trình thi công. Đảm bảo toàn bộ quy trình lắp đặt tuân thủ nghiêm ngặt chuẩn an toàn điện TTE-SAFE, mang tới giải pháp bền vững và an tâm cho gia đình bạn.</p>
             </div>
         </div>
 
