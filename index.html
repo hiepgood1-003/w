@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bình M Phát - Dịch Vụ Điện Mặt Trời Chuyên Nghiệp</title>
-    <!-- Favicon Logo hiển thị trên tab trình duyệt -->
+    <title>Bình M Phát - Dịch Vụ Thi Công Điện Mặt Trời Uy Tín</title>
+    <!-- Favicon Logo tab trình duyệt -->
     <link rel="icon" href="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" type="image/jpeg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,7 @@
     <style>
         :root {
             --gold: #d4af37;
-            --gold-light: #f3e5ab;
             --dark-bg: #0f172a;
-            --card-bg: #ffffff;
             --text-dark: #1e293b;
             --text-muted: #475569;
             --zalo-blue: #0068ff;
@@ -42,60 +40,52 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        /* BANNER HEADER */
+        /* HEADER */
         header {
-            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.94)), 
-                        url('https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)), 
+                        url('https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover no-repeat;
             color: white;
             text-align: center;
-            padding: 60px 20px 50px;
+            padding: 50px 20px 40px;
             border-bottom: 4px solid var(--gold);
         }
 
-        /* Điểm nhấn Logo Chính diện */
         .logo-main-box {
             display: inline-block;
-            background: rgba(15, 23, 42, 0.8);
-            padding: 10px;
+            background: #ffffff;
+            padding: 8px;
             border-radius: 20px;
-            border: 2px solid var(--gold);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .logo-main-box:hover {
-            transform: scale(1.03);
+            border: 3px solid var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            margin-bottom: 15px;
         }
 
         .logo-main-box img {
-            width: 160px;
-            height: 160px;
+            width: 140px;
+            height: 140px;
             border-radius: 12px;
             display: block;
             object-fit: contain;
-            background-color: #ffffff;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 800;
             color: #ffffff;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             text-transform: uppercase;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
 
         header .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--gold);
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
             margin-bottom: 25px;
         }
 
-        /* NÚT BẤM LIÊN HỆ */
+        /* BUTTONS */
         .btn-group {
             display: flex;
             gap: 15px;
@@ -108,13 +98,13 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            padding: 14px 30px;
+            padding: 12px 25px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.95rem;
             border-radius: 50px;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             font-family: 'Montserrat', sans-serif;
         }
 
@@ -129,75 +119,71 @@
         }
 
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transform: translateY(-2px);
             filter: brightness(1.1);
         }
 
         .svg-icon {
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             fill: currentColor;
         }
 
-        /* CONTAINER */
         .container {
-            max-width: 1150px;
+            max-width: 1100px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
-        /* THẺ BẢO HÀNH CÓ WATERMARK LOGO */
+        /* WARRANTY CARD */
         .warranty-card {
             background: linear-gradient(135deg, #0f172a, #1e293b);
-            border-radius: 20px;
-            padding: 40px 30px;
+            border-radius: 16px;
+            padding: 35px 25px;
             text-align: center;
             color: white;
             border: 2px solid var(--gold);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            margin-bottom: 50px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
             position: relative;
             overflow: hidden;
         }
 
-        /* Logo Watermark nền mờ */
         .warranty-card::before {
             content: '';
             position: absolute;
             top: 50%;
-            right: -20px;
+            right: -10px;
             transform: translateY(-50%);
-            width: 250px;
-            height: 250px;
+            width: 220px;
+            height: 220px;
             background: url('https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg') center/contain no-repeat;
-            opacity: 0.1;
+            opacity: 0.08;
             pointer-events: none;
-            border-radius: 50%;
         }
 
         .warranty-card h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: var(--gold);
             margin-bottom: 10px;
             text-transform: uppercase;
         }
 
         .warranty-card p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #e2e8f0;
             max-width: 800px;
             margin: 0 auto;
         }
 
-        /* BỐ CỤC NỘI DUNG */
+        /* SECTION HEADERS */
         .section-header {
             text-align: center;
-            margin-bottom: 45px;
+            margin-bottom: 35px;
         }
 
         .section-title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: var(--dark-bg);
             font-weight: 700;
             text-transform: uppercase;
@@ -208,29 +194,24 @@
         .section-title::after {
             content: '';
             display: block;
-            width: 70px;
+            width: 60px;
             height: 4px;
             background: var(--gold);
-            margin: 10px auto 0;
+            margin: 8px auto 0;
             border-radius: 2px;
         }
 
+        /* FEATURE ROWS */
         .feature-row {
             display: flex;
             align-items: center;
-            gap: 35px;
-            margin-bottom: 40px;
+            gap: 30px;
+            margin-bottom: 35px;
             background: white;
             padding: 25px;
-            border-radius: 18px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
             border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-        }
-
-        .feature-row:hover {
-            border-color: var(--gold);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
         }
 
         .feature-row.reverse {
@@ -239,10 +220,11 @@
 
         .feature-img-box {
             flex: 1;
-            min-width: 280px;
-            height: 260px;
-            border-radius: 14px;
+            min-width: 260px;
+            height: 240px;
+            border-radius: 12px;
             overflow: hidden;
+            background-color: #f1f5f9;
         }
 
         .feature-img-box img {
@@ -250,11 +232,6 @@
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: transform 0.4s ease;
-        }
-
-        .feature-row:hover .feature-img-box img {
-            transform: scale(1.05);
         }
 
         .feature-content {
@@ -266,23 +243,23 @@
             background: rgba(212, 175, 55, 0.15);
             color: #a1811a;
             font-weight: 700;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            margin-bottom: 10px;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-bottom: 8px;
             text-transform: uppercase;
         }
 
         .feature-content h3 {
-            font-size: 1.45rem;
+            font-size: 1.35rem;
             color: var(--dark-bg);
             margin-bottom: 10px;
         }
 
         .feature-content p {
             color: var(--text-muted);
-            font-size: 0.98rem;
-            margin-bottom: 15px;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
         }
 
         .feature-list {
@@ -291,11 +268,10 @@
 
         .feature-list li {
             position: relative;
-            padding-left: 22px;
-            margin-bottom: 6px;
+            padding-left: 20px;
+            margin-bottom: 5px;
             color: var(--text-dark);
-            font-weight: 500;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
         }
 
         .feature-list li::before {
@@ -306,25 +282,25 @@
             font-weight: bold;
         }
 
-        /* LƯỚI THƯ VIỆN ẢNH THI CÔNG */
+        /* GALLERY GRID */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 25px;
         }
 
         .gallery-card {
             background: white;
-            border-radius: 14px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.04);
             border: 1px solid #e2e8f0;
         }
 
         .gallery-card img {
             width: 100%;
-            height: 190px;
+            height: 180px;
             object-fit: cover;
             display: block;
         }
@@ -335,44 +311,43 @@
         }
 
         .gallery-info h4 {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: var(--dark-bg);
         }
 
-        /* KHỐI GIỚI THIỆU VỚI LOGO MINI */
+        /* ABOUT SECTION */
         .about-section {
             background: white;
-            padding: 35px;
-            border-radius: 18px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.04);
-            border-left: 6px solid var(--gold);
-            margin-top: 45px;
+            padding: 30px;
+            border-radius: 16px;
+            border-left: 5px solid var(--gold);
+            margin-top: 40px;
             display: flex;
             align-items: center;
-            gap: 25px;
+            gap: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
         }
 
-        /* Logo Mini */
         .logo-mini {
-            width: 75px;
-            height: 75px;
-            border-radius: 12px;
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
             border: 2px solid var(--gold);
             object-fit: contain;
-            background-color: #ffffff;
+            background: white;
             flex-shrink: 0;
             padding: 2px;
         }
 
         .about-text h3 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: var(--dark-bg);
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .about-text p {
             color: var(--text-muted);
-            font-size: 0.98rem;
+            font-size: 0.95rem;
         }
 
         /* FOOTER */
@@ -380,93 +355,78 @@
             background: var(--dark-bg);
             color: white;
             text-align: center;
-            padding: 50px 20px 30px;
+            padding: 40px 20px 25px;
             border-top: 4px solid var(--gold);
-            margin-top: 50px;
+            margin-top: 45px;
         }
 
         .cta-box {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.04);
             border: 1px solid rgba(212, 175, 55, 0.3);
-            max-width: 700px;
-            margin: 25px auto 0;
-            padding: 30px 20px;
-            border-radius: 18px;
+            max-width: 650px;
+            margin: 20px auto 0;
+            padding: 25px 20px;
+            border-radius: 16px;
         }
 
         .cta-box h3 {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: var(--gold);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .cta-box p {
             color: #94a3b8;
-            margin-bottom: 20px;
-            font-size: 0.95rem;
+            margin-bottom: 18px;
+            font-size: 0.9rem;
         }
 
-        /* BRAND FOOTER LOGO MICRO */
         .footer-brand {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            margin-top: 35px;
+            margin-top: 30px;
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
         .logo-micro {
-            width: 30px;
-            height: 30px;
-            border-radius: 6px;
+            width: 26px;
+            height: 26px;
+            border-radius: 5px;
             object-fit: contain;
             background: white;
-            padding: 1px;
         }
 
-        /* FLOATING ACTION BUTTONS */
+        /* FLOATING BUTTONS */
         .floating-container {
             position: fixed;
             bottom: 20px;
             right: 20px;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
             z-index: 9999;
         }
 
         .float-btn {
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
             text-decoration: none;
-            transition: transform 0.3s ease;
         }
 
-        .float-btn:hover {
-            transform: scale(1.1);
-        }
+        .float-zalo { background: var(--zalo-blue); }
+        .float-call { background: var(--call-green); }
 
-        .float-zalo {
-            background: var(--zalo-blue);
-        }
-
-        .float-call {
-            background: var(--call-green);
-        }
-
-        /* MOBILE RESPONSIVE */
         @media (max-width: 768px) {
-            header h1 { font-size: 1.9rem; }
-            header .subtitle { font-size: 1rem; }
-            .section-title { font-size: 1.5rem; }
+            header h1 { font-size: 1.7rem; }
             .feature-row, .feature-row.reverse {
                 flex-direction: column;
                 padding: 18px;
@@ -479,17 +439,14 @@
                 flex-direction: column;
                 text-align: center;
             }
-            .btn {
-                width: 100%;
-            }
+            .btn { width: 100%; }
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER / HERO -->
+    <!-- HEADER -->
     <header>
-        <!-- Logo Chính diện -->
         <div class="logo-main-box">
             <a href="https://ibb.co/7tXRfJr2" target="_blank">
                 <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Bình M Phát">
@@ -497,46 +454,46 @@
         </div>
         
         <h1>BÌNH M PHÁT</h1>
-        <div class="subtitle">Giải Pháp Điện Mặt Trời Chuyên Nghiệp</div>
+        <div class="subtitle">Dịch Vụ Thi Công Điện Mặt Trời Tận Tâm</div>
         
         <div class="btn-group">
             <a href="tel:0355567466" class="btn btn-call">
-                📞 GỌI TƯ VẤN: 0355 567 466
+                📞 GỌI KHẢO SÁT: 0355 567 466
             </a>
             <a href="https://zalo.me/0945778133" target="_blank" class="btn btn-zalo">
                 <svg class="svg-icon" viewBox="0 0 48 48">
                     <path d="M24 4C12.95 4 4 11.82 4 21.47c0 5.48 2.91 10.35 7.47 13.61L9.6 42.4a1 1 0 0 0 1.45 1.12l8.36-4.59c1.47.35 3.01.54 4.59.54 11.05 0 20-7.82 20-17.47S35.05 4 24 4zm-4.7 23.3h-4.6v-8.6h4.6v8.6zm10.2 0h-4.4l3.1-5.1h-3.1v-3.5h4.4l-3.1 5.1h3.1v3.5zm7.3 0a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6z"/>
                 </svg>
-                ZALO CHÁT: 0945 778 133
+                ZALO TƯ VẤN: 0945 778 133
             </a>
         </div>
     </header>
 
     <div class="container">
 
-        <!-- THẺ BẢO HÀNH CÓ WATERMARK LOGO -->
+        <!-- WARRANTY CARD -->
         <div class="warranty-card">
-            <h2>🛡️ CAM KẾT BẢO HÀNH LÊN ĐẾN 15 NĂM</h2>
-            <p>Bình M Phát đồng hành cùng công trình của bạn suốt chặng đường dài. Cam kết thiết bị chính hãng 100%, hỗ trợ kỹ thuật tận nơi, đảm bảo hệ thống vận hành bền bỉ và đạt hiệu suất cao nhất!</p>
+            <h2>🛡️ CAM KẾT BẢO HÀNH KỸ THUẬT DÀI HẠN</h2>
+            <p>Đội ngũ kỹ thuật Bình M Phát trực tiếp thi công, bàn giao chỉn chu và đồng hành hỗ trợ tận nơi. Đảm bảo toàn bộ vật tư chính hãng, hệ thống vận hành an toàn và đạt hiệu suất tối ưu!</p>
         </div>
 
         <div class="section-header">
-            <div class="section-title">GIẢI PHÁP ĐIỆN MẶT TRỜI TOÀN DIỆN</div>
+            <div class="section-title">GIẢI PHÁP ĐIỆN MẶT TRỜI TỐI ƯU</div>
         </div>
 
         <!-- MỤC 1: TIẾT KIỆM TIỀN ĐIỆN -->
         <div class="feature-row">
             <div class="feature-img-box">
-                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=700&q=80" alt="Tiết kiệm tiền điện">
+                <img src="https://images.pexels.com/photos/159397/solar-panel-array-power-sun-159397.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Tiết kiệm tiền điện">
             </div>
             <div class="feature-content">
                 <span class="badge-tag">Tối Ưu Chi Phí</span>
-                <h3>Cắt Giảm 80 - 90% Tiền Điện Hàng Tháng</h3>
-                <p>Hệ thống điện mặt trời giúp hộ gia đình và nhà xưởng tự chủ nguồn năng lượng sạch ban ngày, loại bỏ hoàn toàn gánh nặng tiền điện giá cao vào giờ cao điểm.</p>
+                <h3>Cắt Giảm Mức Tiêu Thụ Điện Ban Ngày</h3>
+                <p>Giải pháp điện mặt trời áp mái giúp hộ gia đình và cơ sở kinh doanh tự chủ nguồn năng lượng sạch, chủ động giảm gánh nặng hóa đơn tiền điện hàng tháng.</p>
                 <ul class="feature-list">
-                    <li>Hoàn vốn nhanh chóng chỉ từ 3 - 5 năm.</li>
-                    <li>Sử dụng điện thoải mái cho điều hòa, máy móc.</li>
-                    <li>Nâng cao giá trị thẩm mỹ cho ngôi nhà.</li>
+                    <li>Thu hồi vốn nhanh chóng và sử dụng lâu dài.</li>
+                    <li>Thoải mái vận hành điều hòa, thiết bị điện ban ngày.</li>
+                    <li>Tận dụng diện tích mái nhà, chống nóng hiệu quả.</li>
                 </ul>
             </div>
         </div>
@@ -544,16 +501,16 @@
         <!-- MỤC 2: KHUNG ĐỞ VỮNG CHẮC -->
         <div class="feature-row reverse">
             <div class="feature-img-box">
-                <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=700&q=80" alt="Thi công giàn khung vững chắc">
+                <img src="https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Giàn khung chắc chắn">
             </div>
             <div class="feature-content">
-                <span class="badge-tag">An Toàn Tuyệt Đối</span>
-                <h3>Thi Công Giàn Khung Khóa Chắc Bền Bỉ</h3>
-                <p>Khung đỡ sử dụng chất liệu thép mạ kẽm/nhôm định hình chống gỉ sét cực cao, chịu đựng tốt sóng gió bão bùng. Quy trình gia cố áp mái được thực hiện tỉ mỉ chống rò rỉ nước 100%.</p>
+                <span class="badge-tag">Thi Công Chuẩn Kỹ Thuật</span>
+                <h3>Giàn Khung Đỡ Chắc Chắn & Chống Rò Rỉ Mái</h3>
+                <p>Khung đỡ được thiết kế chịu lực tốt, gia cố kiên cố chống bão giật. Quy trình xử lý điểm bắt vít chống thấm nước mái tôn/mái bằng được thực hiện vô cùng cẩn thận.</p>
                 <ul class="feature-list">
-                    <li>Khung dầm kiên cố, khả năng chịu lực bão tố.</li>
-                    <li>Kỹ thuật gia cố chống thấm nước mái nhà tuyệt đối.</li>
-                    <li>Đảm bảo khoảng cách lưu thông gió làm mát pin.</li>
+                    <li>Vật liệu sắt mạ kẽm/nhôm định hình bền bỉ.</li>
+                    <li>Kỹ thuật xử lý keo chống thấm mái chuyên nghiệp.</li>
+                    <li>Đảm bảo thẩm mỹ và độ an toàn cho toàn bộ ngôi nhà.</li>
                 </ul>
             </div>
         </div>
@@ -561,16 +518,16 @@
         <!-- MỤC 3: PIN VÀ INVERTER CHÍNH HÃNG -->
         <div class="feature-row">
             <div class="feature-img-box">
-                <img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=700&q=80" alt="Pin và Inverter chính hãng">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/SMA_Solar_Inverter.jpg/800px-SMA_Solar_Inverter.jpg" alt="Inverter biến tần chuẩn">
             </div>
             <div class="feature-content">
-                <span class="badge-tag">Chất Lượng Cao Cấp</span>
-                <h3>Tấm Pin & Inverter Biến Tần Chính Hãng</h3>
-                <p>Bình M Phát tuyển chọn các dòng tấm pin mặt trời công nghệ mới nhất có hiệu suất chuyển đổi cao, kết hợp cùng bộ biến tần Inverter hoạt động êm ái, tuổi thọ trên 25 năm.</p>
+                <span class="badge-tag">Thiết Bị Chuẩn</span>
+                <h3>Tấm Pin & Inverter Biến Tần Chất Lượng</h3>
+                <p>Bình M Phát tư vấn chọn lọc các dòng tấm pin công suất lớn và bộ biến tần Inverter hoạt động ổn định, hiệu suất cao, giúp hệ thống vận hành êm ái qua nhiều năm.</p>
                 <ul class="feature-list">
-                    <li>Pin công suất lớn, hấp thụ ánh sáng cực tốt.</li>
-                    <li>Inverter thông minh tự động hòa lưới ổn định.</li>
-                    <li>Chống nóng cho mái nhà, giảm 3 - 5°C nhiệt độ.</li>
+                    <li>Pin công nghệ mới, chuyển đổi điện năng tối ưu.</li>
+                    <li>Bộ hòa lưới Inverter an toàn, chống giật, chống cháy nổ.</li>
+                    <li>Bảo hành nhà máy đầy đủ cho từng thiết bị.</li>
                 </ul>
             </div>
         </div>
@@ -578,70 +535,70 @@
         <!-- MỤC 4: GIÁM SÁT THÔNG MINH -->
         <div class="feature-row reverse">
             <div class="feature-img-box">
-                <img src="https://images.unsplash.com/photo-1558441719-67450807e989?auto=format&fit=crop&w=700&q=80" alt="Giám sát thông minh">
+                <img src="https://images.pexels.com/photos/50711/pexels-photo-50711.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Giám sát qua điện thoại">
             </div>
             <div class="feature-content">
-                <span class="badge-tag">Công Nghệ 4.0</span>
-                <h3>Theo Dõi Sản Lượng Điện Qua Điện Thoại</h3>
-                <p>Chỉ với một chiếc điện thoại thông minh, bạn có thể dễ dàng kiểm tra số ký điện (kWh) sinh ra hàng ngày. Hệ thống tự động báo lỗi giúp việc quản lý vô cùng thuận tiện.</p>
+                <span class="badge-tag">Tiện Lợi</span>
+                <h3>Giám Sát Sản Lượng Điện Qua Điện Thoại</h3>
+                <p>Hệ thống tích hợp ứng dụng theo dõi thông minh. Quý khách dễ dàng kiểm tra chỉ số phát điện mỗi ngày ngay trên chiếc điện thoại cá nhân.</p>
                 <ul class="feature-list">
-                    <li>Giao diện Tiếng Việt thân thiện, dễ nhìn.</li>
-                    <li>Giám sát từ xa mọi lúc mọi nơi.</li>
-                    <li>Hỗ trợ kỹ thuật 24/7 từ Bình M Phát.</li>
+                    <li>Giao diện trực quan, hiển thị rõ ràng số kWh.</li>
+                    <li>Kiểm tra trạng thái hoạt động mọi lúc mọi nơi.</li>
+                    <li>Thợ Bình M Phát hỗ trợ cài đặt và hướng dẫn tận tình.</li>
                 </ul>
             </div>
         </div>
 
         <!-- THƯ VIỆN ẢNH THI CÔNG -->
-        <div class="section-header" style="margin-top: 50px;">
+        <div class="section-header" style="margin-top: 45px;">
             <div class="section-title">HÌNH ẢNH THI CÔNG THỰC TẾ</div>
         </div>
 
         <div class="gallery-grid">
             <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=500&q=80" alt="Lắp pin trên mái">
+                <img src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Lắp pin trên mái">
                 <div class="gallery-info">
-                    <h4>Lắp Đặt Pin Mặt Trời Chuẩn Kỹ Thuật</h4>
+                    <h4>Lắp Đặt Pin Mặt Trời Mái Nhà</h4>
                 </div>
             </div>
             <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=500&q=80" alt="Inverter hòa lưới">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/SMA_Solar_Inverter.jpg/800px-SMA_Solar_Inverter.jpg" alt="Inverter hòa lưới">
                 <div class="gallery-info">
-                    <h4>Hệ Thống Inverter Hòa Lưới An Toàn</h4>
+                    <h4>Lắp Đặt Biến Tần Inverter</h4>
                 </div>
             </div>
             <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=500&q=80" alt="Gia cố khung đỡ">
+                <img src="https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Gia cố khung đỡ">
                 <div class="gallery-info">
-                    <h4>Gia Cố Khung Đỡ Thép Siêu Bền</h4>
+                    <h4>Gia Cố Khung Đỡ Chịu Lực</h4>
                 </div>
             </div>
             <div class="gallery-card">
-                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=500&q=80" alt="Công trình bàn giao">
+                <img src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Hoàn thiện công trình">
                 <div class="gallery-info">
-                    <h4>Công Trình Bàn Giao Hoàn Hảo</h4>
+                    <h4>Bàn Giao Vận Hành Hệ Thống</h4>
                 </div>
             </div>
         </div>
 
-        <!-- THẺ GIỚI THIỆU TÁC GIẢ KÈM LOGO MINI -->
+        <!-- KHỐI GIỚI THIỆU -->
         <div class="about-section">
             <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Mini" class="logo-mini">
             <div class="about-text">
-                <h3>Về Tôi - Bình M Phát</h3>
-                <p>Tôi trực tiếp tư vấn, khảo sát tận nơi và theo sát quá trình thi công để đảm bảo từng kết cấu khung đỡ, từng mối nối điện đều đạt chuẩn an toàn tuyệt đối. Sự tin tưởng của quý khách chính là uy tín lâu dài của tôi.</p>
+                <h3>Về Dịch Vụ Bình M Phát</h3>
+                <p>Là đơn vị kỹ thuật tay nghề cao, tôi trực tiếp tư vấn, khảo sát thực tế và thi công tỉ mỉ từng chi tiết. Không qua trung gian, mang lại giải pháp chất lượng nhất với chi phí hợp lý cho mọi nhà.</p>
             </div>
         </div>
 
     </div>
 
-    <!-- FOOTER LIÊN HỆ -->
+    <!-- FOOTER -->
     <footer>
-        <h2 style="font-size: 1.8rem; color: var(--gold);">LIÊN HỆ KHẢO SÁT & TƯ VẤN MIỄN PHÍ</h2>
+        <h2 style="font-size: 1.6rem; color: var(--gold);">LIÊN HỆ KHẢO SÁT & TƯ VẤN TRỰC TIẾP</h2>
         
         <div class="cta-box">
-            <h3>BÌNH M PHÁT - ĐIỆN MẶT TRỜI UY TÍN</h3>
-            <p>Bấm vào nút liên hệ bên dưới để nhận báo giá chi tiết lập tức:</p>
+            <h3>BÌNH M PHÁT - ĐIỆN MẶT TRỜI TẬN TÂM</h3>
+            <p>Liên hệ ngay hôm nay để nhận tư vấn giải pháp phù hợp nhất:</p>
             
             <div class="btn-group">
                 <a href="tel:0355567466" class="btn btn-call">
@@ -656,22 +613,21 @@
             </div>
         </div>
 
-        <!-- Logo Micro ở Footer -->
         <div class="footer-brand">
             <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Micro" class="logo-micro">
-            <span>© Bản quyền thuộc về Bình M Phát - Điện Mặt Trời.</span>
+            <span>© Bình M Phát - Thi Công Điện Mặt Trời Uy Tín.</span>
         </div>
     </footer>
 
-    <!-- NÚT NỔI LIÊN HỆ CỐ ĐỊNH GÓC MÀN HÌNH -->
+    <!-- NÚT LIÊN HỆ NỔI -->
     <div class="floating-container">
         <a href="https://zalo.me/0945778133" target="_blank" class="float-btn float-zalo" title="Chat Zalo">
-            <svg class="svg-icon" viewBox="0 0 48 48" style="width: 30px; height: 30px;">
+            <svg class="svg-icon" viewBox="0 0 48 48" style="width: 26px; height: 26px;">
                 <path d="M24 4C12.95 4 4 11.82 4 21.47c0 5.48 2.91 10.35 7.47 13.61L9.6 42.4a1 1 0 0 0 1.45 1.12l8.36-4.59c1.47.35 3.01.54 4.59.54 11.05 0 20-7.82 20-17.47S35.05 4 24 4zm-4.7 23.3h-4.6v-8.6h4.6v8.6zm10.2 0h-4.4l3.1-5.1h-3.1v-3.5h4.4l-3.1 5.1h3.1v3.5zm7.3 0a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6z"/>
             </svg>
         </a>
         <a href="tel:0355567466" class="float-btn float-call" title="Gọi Hotline">
-            <span style="font-size: 24px;">📞</span>
+            <span style="font-size: 20px;">📞</span>
         </a>
     </div>
 
