@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bình M Phát - Dịch Vụ Điện Mặt Trời Chuyên Nghiệp</title>
-    <link rel="icon" href="https://i.ibb.co/z817498/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" type="image/jpeg">
+    <!-- Favicon Logo hiển thị trên tab trình duyệt -->
+    <link rel="icon" href="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" type="image/jpeg">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -50,14 +52,14 @@
             border-bottom: 4px solid var(--gold);
         }
 
-        /* điểm nhấn Logo Chính diện */
+        /* Điểm nhấn Logo Chính diện */
         .logo-main-box {
             display: inline-block;
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(15, 23, 42, 0.8);
             padding: 10px;
-            border-radius: 24px;
+            border-radius: 20px;
             border: 2px solid var(--gold);
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
             margin-bottom: 20px;
             transition: transform 0.3s ease;
         }
@@ -69,9 +71,10 @@
         .logo-main-box img {
             width: 160px;
             height: 160px;
-            border-radius: 16px;
+            border-radius: 12px;
             display: block;
-            object-fit: cover;
+            object-fit: contain;
+            background-color: #ffffff;
         }
 
         header h1 {
@@ -144,7 +147,7 @@
             padding: 50px 20px;
         }
 
-        /* THẺ BẢO HÀNH CÓ WATERMARK LOGO TẠO ĐIỂM NHẤN */
+        /* THẺ BẢO HÀNH CÓ WATERMARK LOGO */
         .warranty-card {
             background: linear-gradient(135deg, #0f172a, #1e293b);
             border-radius: 20px;
@@ -158,7 +161,7 @@
             overflow: hidden;
         }
 
-        /* Điểm nhấn Logo Watermark nền mờ */
+        /* Logo Watermark nền mờ */
         .warranty-card::before {
             content: '';
             position: absolute;
@@ -167,8 +170,8 @@
             transform: translateY(-50%);
             width: 250px;
             height: 250px;
-            background: url('https://i.ibb.co/z817498/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg') center/cover;
-            opacity: 0.08;
+            background: url('https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg') center/contain no-repeat;
+            opacity: 0.1;
             pointer-events: none;
             border-radius: 50%;
         }
@@ -187,7 +190,7 @@
             margin: 0 auto;
         }
 
-        /* BỐ CỤC ZIG-ZAG ẢNH + NỘI DUNG SẮP XẾP CHUẨN */
+        /* BỐ CỤC NỘI DUNG */
         .section-header {
             text-align: center;
             margin-bottom: 45px;
@@ -303,7 +306,7 @@
             font-weight: bold;
         }
 
-        /* LƯỚI THƯ VIỆN ẢNH THI CÔNG chuẩn */
+        /* LƯỚI THƯ VIỆN ẢNH THI CÔNG */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -336,7 +339,7 @@
             color: var(--dark-bg);
         }
 
-        /* KHỐI GIỚI THIỆU TÁC GIẢ VỚI LOGO MINI */
+        /* KHỐI GIỚI THIỆU VỚI LOGO MINI */
         .about-section {
             background: white;
             padding: 35px;
@@ -349,14 +352,16 @@
             gap: 25px;
         }
 
-        /* điểm nhấn Logo Mini */
+        /* Logo Mini */
         .logo-mini {
-            width: 70px;
-            height: 70px;
+            width: 75px;
+            height: 75px;
             border-radius: 12px;
             border: 2px solid var(--gold);
-            object-fit: cover;
+            object-fit: contain;
+            background-color: #ffffff;
             flex-shrink: 0;
+            padding: 2px;
         }
 
         .about-text h3 {
@@ -370,7 +375,7 @@
             font-size: 0.98rem;
         }
 
-        /* FOOTER LIÊN HỆ TỐI ƯU */
+        /* FOOTER */
         footer {
             background: var(--dark-bg);
             color: white;
@@ -401,7 +406,7 @@
             font-size: 0.95rem;
         }
 
-        /* BRAND FOOTER CÓ LOGO MINI */
+        /* BRAND FOOTER LOGO MICRO */
         .footer-brand {
             display: flex;
             align-items: center;
@@ -413,10 +418,12 @@
         }
 
         .logo-micro {
-            width: 28px;
-            height: 28px;
+            width: 30px;
+            height: 30px;
             border-radius: 6px;
-            object-fit: cover;
+            object-fit: contain;
+            background: white;
+            padding: 1px;
         }
 
         /* FLOATING ACTION BUTTONS */
@@ -480,9 +487,13 @@
 </head>
 <body>
 
+    <!-- HEADER / HERO -->
     <header>
+        <!-- Logo Chính diện -->
         <div class="logo-main-box">
-            <img src="https://i.ibb.co/z817498/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Bình M Phát">
+            <a href="https://ibb.co/7tXRfJr2" target="_blank">
+                <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Bình M Phát">
+            </a>
         </div>
         
         <h1>BÌNH M PHÁT</h1>
@@ -503,6 +514,7 @@
 
     <div class="container">
 
+        <!-- THẺ BẢO HÀNH CÓ WATERMARK LOGO -->
         <div class="warranty-card">
             <h2>🛡️ CAM KẾT BẢO HÀNH LÊN ĐẾN 15 NĂM</h2>
             <p>Bình M Phát đồng hành cùng công trình của bạn suốt chặng đường dài. Cam kết thiết bị chính hãng 100%, hỗ trợ kỹ thuật tận nơi, đảm bảo hệ thống vận hành bền bỉ và đạt hiệu suất cao nhất!</p>
@@ -512,6 +524,7 @@
             <div class="section-title">GIẢI PHÁP ĐIỆN MẶT TRỜI TOÀN DIỆN</div>
         </div>
 
+        <!-- MỤC 1: TIẾT KIỆM TIỀN ĐIỆN -->
         <div class="feature-row">
             <div class="feature-img-box">
                 <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=700&q=80" alt="Tiết kiệm tiền điện">
@@ -528,6 +541,7 @@
             </div>
         </div>
 
+        <!-- MỤC 2: KHUNG ĐỞ VỮNG CHẮC -->
         <div class="feature-row reverse">
             <div class="feature-img-box">
                 <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=700&q=80" alt="Thi công giàn khung vững chắc">
@@ -544,6 +558,7 @@
             </div>
         </div>
 
+        <!-- MỤC 3: PIN VÀ INVERTER CHÍNH HÃNG -->
         <div class="feature-row">
             <div class="feature-img-box">
                 <img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=700&q=80" alt="Pin và Inverter chính hãng">
@@ -560,6 +575,7 @@
             </div>
         </div>
 
+        <!-- MỤC 4: GIÁM SÁT THÔNG MINH -->
         <div class="feature-row reverse">
             <div class="feature-img-box">
                 <img src="https://images.unsplash.com/photo-1558441719-67450807e989?auto=format&fit=crop&w=700&q=80" alt="Giám sát thông minh">
@@ -576,6 +592,7 @@
             </div>
         </div>
 
+        <!-- THƯ VIỆN ẢNH THI CÔNG -->
         <div class="section-header" style="margin-top: 50px;">
             <div class="section-title">HÌNH ẢNH THI CÔNG THỰC TẾ</div>
         </div>
@@ -607,8 +624,9 @@
             </div>
         </div>
 
+        <!-- THẺ GIỚI THIỆU TÁC GIẢ KÈM LOGO MINI -->
         <div class="about-section">
-            <img src="https://i.ibb.co/z817498/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Mini" class="logo-mini">
+            <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Mini" class="logo-mini">
             <div class="about-text">
                 <h3>Về Tôi - Bình M Phát</h3>
                 <p>Tôi trực tiếp tư vấn, khảo sát tận nơi và theo sát quá trình thi công để đảm bảo từng kết cấu khung đỡ, từng mối nối điện đều đạt chuẩn an toàn tuyệt đối. Sự tin tưởng của quý khách chính là uy tín lâu dài của tôi.</p>
@@ -617,6 +635,7 @@
 
     </div>
 
+    <!-- FOOTER LIÊN HỆ -->
     <footer>
         <h2 style="font-size: 1.8rem; color: var(--gold);">LIÊN HỆ KHẢO SÁT & TƯ VẤN MIỄN PHÍ</h2>
         
@@ -637,12 +656,14 @@
             </div>
         </div>
 
+        <!-- Logo Micro ở Footer -->
         <div class="footer-brand">
-            <img src="https://i.ibb.co/z817498/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Micro" class="logo-micro">
+            <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Micro" class="logo-micro">
             <span>© Bản quyền thuộc về Bình M Phát - Điện Mặt Trời.</span>
         </div>
     </footer>
 
+    <!-- NÚT NỔI LIÊN HỆ CỐ ĐỊNH GÓC MÀN HÌNH -->
     <div class="floating-container">
         <a href="https://zalo.me/0945778133" target="_blank" class="float-btn float-zalo" title="Chat Zalo">
             <svg class="svg-icon" viewBox="0 0 48 48" style="width: 30px; height: 30px;">
