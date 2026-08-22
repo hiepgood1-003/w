@@ -1,756 +1,207 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bình M Phát - Dịch Vụ Điện Mặt Trời Chuyên Nghiệp & An Toàn</title>
-    <!-- Favicon Logo hiển thị trên tab trình duyệt -->
-    <link rel="icon" href="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" type="image/jpeg">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --gold: #d4af37;
-            --gold-light: #f3e5ab;
-            --dark-bg: #0f172a;
-            --card-bg: #ffffff;
-            --text-dark: #1e293b;
-            --text-muted: #475569;
-            --zalo-blue: #0068ff;
-            --call-green: #22c55e;
-            --light-bg: #f1f5f9;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* HỌA TIẾT NỀN CHÌM SANG TRỌNG */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--light-bg);
-            background-image: 
-                radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%),
-                linear-gradient(135deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%), 
-                linear-gradient(225deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%), 
-                linear-gradient(45deg, rgba(212, 175, 55, 0.03) 25%, transparent 25%), 
-                linear-gradient(315deg, rgba(212, 175, 55, 0.03) 25%, #f1f5f9 25%);
-            background-position: 10px 0, 10px 0, 0 0, 0 0;
-            background-size: 40px 40px;
-            background-repeat: repeat;
-            color: var(--text-dark);
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        /* BANNER HEADER */
-        header {
-            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.94)), 
-                        url('https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 60px 20px 50px;
-            border-bottom: 4px solid var(--gold);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .logo-main-box {
-            display: inline-block;
-            background: rgba(15, 23, 42, 0.8);
-            padding: 10px;
-            border-radius: 20px;
-            border: 2px solid var(--gold);
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .logo-main-box:hover {
-            transform: scale(1.03);
-        }
-
-        .logo-main-box img {
-            width: 160px;
-            height: 160px;
-            border-radius: 12px;
-            display: block;
-            object-fit: contain;
-            background-color: #ffffff;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: #ffffff;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-        }
-
-        header .subtitle {
-            font-size: 1.2rem;
-            color: var(--gold);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 25px;
-        }
-
-        /* NÚT BẤM LIÊN HỆ */
-        .btn-group {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 14px 30px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.2);
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .btn-call {
-            background: linear-gradient(135deg, var(--gold), #b89628);
-            color: #0f172a;
-        }
-
-        .btn-zalo {
-            background: linear-gradient(135deg, #0068ff, #0046b8);
-            color: #ffffff;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-            filter: brightness(1.1);
-        }
-
-        .zalo-icon-img {
-            width: 24px;
-            height: 24px;
-            object-fit: contain;
-            border-radius: 4px;
-        }
-
-        /* CONTAINER */
-        .container {
-            max-width: 1150px;
-            margin: auto;
-            padding: 50px 20px;
-        }
-
-        /* THẺ BẢO HÀNH CÓ CÁC GÓI BẢO HÀNH */
-        .warranty-card {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            border-radius: 20px;
-            padding: 40px 30px;
-            text-align: center;
-            color: white;
-            border: 2px solid var(--gold);
-            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.25);
-            margin-bottom: 50px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .warranty-card h2 {
-            font-size: 1.8rem;
-            color: var(--gold);
-            margin-bottom: 12px;
-            text-transform: uppercase;
-        }
-
-        .warranty-card p {
-            font-size: 1.05rem;
-            color: #e2e8f0;
-            max-width: 850px;
-            margin: 0 auto 15px;
-        }
-
-        .tte-badge-box {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(212, 175, 55, 0.15);
-            border: 1px solid var(--gold);
-            padding: 8px 20px;
-            border-radius: 30px;
-            color: var(--gold-light);
-            font-size: 0.92rem;
-            font-weight: 600;
-        }
-
-        /* BỐ CỤC NỘI DUNG */
-        .section-header {
-            text-align: center;
-            margin-bottom: 45px;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: var(--dark-bg);
-            font-weight: 700;
-            text-transform: uppercase;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 70px;
-            height: 4px;
-            background: var(--gold);
-            margin: 10px auto 0;
-            border-radius: 2px;
-        }
-
-        .feature-row {
-            display: flex;
-            align-items: center;
-            gap: 35px;
-            margin-bottom: 40px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(5px);
-            padding: 25px;
-            border-radius: 18px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .feature-row:hover {
-            border-color: var(--gold);
-            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
-            transform: translateY(-2px);
-        }
-
-        .feature-row.reverse {
-            flex-direction: row-reverse;
-        }
-
-        .feature-img-box {
-            flex: 1;
-            min-width: 280px;
-            height: 260px;
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .feature-img-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.4s ease;
-        }
-
-        .feature-row:hover .feature-img-box img {
-            transform: scale(1.05);
-        }
-
-        .feature-content {
-            flex: 1.2;
-        }
-
-        .badge-tag {
-            display: inline-block;
-            background: rgba(212, 175, 55, 0.15);
-            color: #a1811a;
-            font-weight: 700;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.85rem;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .feature-content h3 {
-            font-size: 1.45rem;
-            color: var(--dark-bg);
-            margin-bottom: 10px;
-        }
-
-        .feature-content p {
-            color: var(--text-muted);
-            font-size: 0.98rem;
-            margin-bottom: 15px;
-        }
-
-        .feature-list {
-            list-style: none;
-        }
-
-        .feature-list li {
-            position: relative;
-            padding-left: 22px;
-            margin-bottom: 6px;
-            color: var(--text-dark);
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        .feature-list li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--call-green);
-            font-weight: bold;
-        }
-
-        /* KHU VỰC BIỂU TƯỢNG DỊCH VỤ DÙNG SVG DẠNG KHỐI TRÒN */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .gallery-card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 18px;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-            border: 1px solid rgba(212, 175, 55, 0.25);
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .gallery-card:hover {
-            transform: translateY(-6px);
-            border-color: var(--gold);
-            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.2);
-            background: #ffffff;
-        }
-
-        .icon-wrapper {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            border: 2px solid var(--gold);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 18px;
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery-card:hover .icon-wrapper {
-            transform: scale(1.1);
-        }
-
-        .icon-svg {
-            width: 40px;
-            height: 40px;
-            fill: var(--gold);
-        }
-
-        .gallery-info h4 {
-            font-size: 1.05rem;
-            color: var(--dark-bg);
-            font-weight: 700;
-            line-height: 1.4;
-        }
-
-        /* KHỐI VỀ CHÚNG TÔI DẠNG HÀNG TỪNG MỤC (YÊU CẦU 1) */
-        .about-section {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 35px;
-            border-radius: 18px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border-left: 6px solid var(--gold);
-            border-top: 1px solid rgba(212, 175, 55, 0.2);
-            border-right: 1px solid rgba(212, 175, 55, 0.2);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-            margin-top: 45px;
-        }
-
-        .about-header-box {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .logo-mini {
-            width: 70px;
-            height: 70px;
-            border-radius: 12px;
-            border: 2px solid var(--gold);
-            object-fit: contain;
-            background-color: #ffffff;
-            flex-shrink: 0;
-            padding: 2px;
-        }
-
-        .about-header-box h3 {
-            font-size: 1.5rem;
-            color: var(--dark-bg);
-        }
-
-        .about-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .about-list li {
-            position: relative;
-            padding-left: 28px;
-            font-size: 1rem;
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        .about-list li::before {
-            content: "✦";
-            position: absolute;
-            left: 0;
-            color: var(--gold);
-            font-size: 1.2rem;
-        }
-
-        /* FOOTER */
-        footer {
-            background: var(--dark-bg);
-            color: white;
-            text-align: center;
-            padding: 50px 20px 30px;
-            border-top: 4px solid var(--gold);
-            margin-top: 50px;
-        }
-
-        .cta-box {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            max-width: 700px;
-            margin: 25px auto 0;
-            padding: 30px 20px;
-            border-radius: 18px;
-        }
-
-        .cta-box h3 {
-            font-size: 1.6rem;
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
-
-        .cta-box p {
-            color: #94a3b8;
-            margin-bottom: 20px;
-            font-size: 0.95rem;
-        }
-
-        .footer-brand {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 35px;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-
-        .logo-micro {
-            width: 30px;
-            height: 30px;
-            border-radius: 6px;
-            object-fit: contain;
-            background: white;
-            padding: 1px;
-        }
-
-        /* FLOATING ACTION BUTTONS */
-        .floating-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            z-index: 9999;
-        }
-
-        .float-btn {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-
-        .float-btn:hover {
-            transform: scale(1.1);
-        }
-
-        .float-zalo {
-            background: var(--zalo-blue);
-        }
-
-        .float-call {
-            background: var(--call-green);
-        }
-
-        /* MOBILE RESPONSIVE */
-        @media (max-width: 768px) {
-            header h1 { font-size: 1.9rem; }
-            header .subtitle { font-size: 1rem; }
-            .section-title { font-size: 1.5rem; }
-            .feature-row, .feature-row.reverse {
-                flex-direction: column;
-                padding: 18px;
-            }
-            .feature-img-box {
-                width: 100%;
-                height: 200px;
-            }
-            .about-header-box {
-                flex-direction: column;
-                text-align: center;
-            }
-            .btn {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <!-- HEADER / HERO -->
-    <header>
-        <div class="logo-main-box">
-            <a href="https://ibb.co/7tXRfJr2" target="_blank">
-                <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Bình M Phát">
-            </a>
-        </div>
-        
-        <h1>BÌNH M PHÁT</h1>
-        <div class="subtitle">Giải Pháp Điện Mặt Trời Chuyên Nghiệp</div>
-        
-        <div class="btn-group">
-            <a href="tel:0355567466" class="btn btn-call">
-                📞 GỌI TƯ VẤN: 0355 567 466
-            </a>
-            <a href="https://zalo.me/0945778133" target="_blank" class="btn btn-zalo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo Logo" class="zalo-icon-img">
-                ZALO CHÁT: 0945 778 133
-            </a>
-        </div>
-    </header>
-
-    <div class="container">
-
-        <!-- THẺ CHÍNH SÁCH BẢO HÀNH & NGUỒN ĐIỆN ỔN ĐỊNH -->
-        <div class="warranty-card">
-            <h2>🛡️ ĐA DẠNG GÓI BẢO HÀNH - PIN MẶT TRỜI LÊN ĐẾN 15 NĂM</h2>
-            <p>Bình M Phát cung cấp nhiều gói giải pháp bảo hành linh hoạt theo nhu cầu riêng của từng khách hàng. Cam kết sử dụng 100% linh kiện phụ kiện chính hãng, đảm bảo nguồn điện vận hành ổn định và an toàn.</p>
-            <div class="tte-badge-box">
-                ⚡ TÙY CHỌN TÍCH HỢP LINH KIỆN AN TOÀN CAO CẤP (NHƯ TTE-SAFE...) KHI KHÁCH HÀNG CÓ NHU CẦU
+<!-- KHỐI QUẢNG CÁO DỊCH VỤ TƯƠNG TÁC MẠNG XÃ HỘI -->
+<style>
+    .social-promo-box {
+        background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+        border: 2px solid #d4af37;
+        border-radius: 20px;
+        padding: 35px 25px;
+        margin: 40px auto;
+        max-width: 1150px;
+        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+        color: #ffffff;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .social-promo-box::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 60%);
+        pointer-events: none;
+    }
+
+    .social-badge {
+        display: inline-block;
+        background: linear-gradient(90deg, #ff0050, #00f2fe, #1877f2, #ff0000);
+        background-size: 300% 300%;
+        animation: gradientShift 4s ease infinite;
+        color: #fff;
+        font-weight: 800;
+        font-size: 0.85rem;
+        padding: 6px 18px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+    }
+
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .social-promo-box h2 {
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+    .social-promo-box h2 span {
+        color: #d4af37;
+    }
+
+    .social-promo-box p {
+        color: #94a3b8;
+        font-size: 1.05rem;
+        max-width: 750px;
+        margin: 0 auto 25px;
+    }
+
+    /* GRID CÁC NỀN TẢNG */
+    .social-platforms-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .platform-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .platform-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #d4af37;
+    }
+
+    .platform-icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+    }
+
+    .bg-tiktok { background: #000000; border: 1px solid #25f4ee; }
+    .bg-facebook { background: #1877f2; }
+    .bg-youtube { background: #ff0000; }
+
+    .platform-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        color: #ffffff;
+    }
+
+    .platform-card ul {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        font-size: 0.9rem;
+        color: #cbd5e1;
+    }
+
+    .platform-card ul li {
+        margin-bottom: 5px;
+        padding-left: 18px;
+        position: relative;
+    }
+
+    .platform-card ul li::before {
+        content: '⚡';
+        position: absolute;
+        left: 0;
+        font-size: 0.8rem;
+    }
+
+    /* NÚT KÍCH THÍCH HÀNH ĐỘNG */
+    .social-cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, #22c55e, #16a34a);
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.1rem;
+        padding: 14px 35px;
+        border-radius: 50px;
+        text-decoration: none;
+        box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+        transition: all 0.3s ease;
+    }
+
+    .social-cta-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(34, 197, 94, 0.6);
+    }
+
+    @media (max-width: 768px) {
+        .social-promo-box h2 { font-size: 1.5rem; }
+        .social-platforms-grid { grid-template-columns: 1fr; }
+    }
+</style>
+
+<div class="social-promo-box">
+    <div class="social-badge">🔥 Dịch Vụ Hỗ Trợ Truyền Thông VIP</div>
+    <h2>TĂNG TÁC VỤ & BỨT PHÁ KÊNH <span>TIKTOK - FACEBOOK - YOUTUBE</span></h2>
+    <p>Giải pháp tăng Like, Follow, Sub, View chuẩn thật – Uy tín, bảo mật, bảo hành dài hạn giúp nâng tầm thương hiệu cá nhân & kinh doanh của bạn.</p>
+
+    <div class="social-platforms-grid">
+        <!-- TIKTOK -->
+        <div class="platform-card">
+            <div class="platform-icon bg-tiktok">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.2-1.74 2.89 2.89 0 0 1 2.31-2.22V8.2a6.34 6.34 0 0 0-3.66 1.15A6.33 6.33 0 1 0 15.86 15V8.2a8.2 8.2 0 0 0 4.73 1.5v-3a4.85 4.85 0 0 1-1-.01z"/></svg>
             </div>
-        </div>
-
-        <div class="section-header">
-            <div class="section-title">GIẢI PHÁP ĐIỆN MẶT TRỜI TOÀN DIỆN</div>
-        </div>
-
-        <!-- MỤC 1 -->
-        <div class="feature-row">
-            <div class="feature-img-box">
-                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=700&q=80" alt="Tiết kiệm tiền điện">
-            </div>
-            <div class="feature-content">
-                <span class="badge-tag">Tối Ưu Chi Phí</span>
-                <h3>Cắt Giảm 80 - 90% Tiền Điện Hàng Tháng</h3>
-                <p>Hệ thống điện mặt trời giúp hộ gia đình và nhà xưởng tự chủ nguồn năng lượng sạch ban ngày, loại bỏ hoàn toàn gánh nặng tiền điện giá cao vào giờ cao điểm.</p>
-                <ul class="feature-list">
-                    <li>Hoàn vốn nhanh chóng chỉ từ 3 - 5 năm.</li>
-                    <li>Sử dụng điện thoải mái cho điều hòa, máy móc.</li>
-                    <li>Nâng cao giá trị thẩm mỹ cho ngôi nhà.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- MỤC 2 -->
-        <div class="feature-row reverse">
-            <div class="feature-img-box">
-                <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=700&q=80" alt="Thi công giàn khung vững chắc">
-            </div>
-            <div class="feature-content">
-                <span class="badge-tag">Gia Công Kiên Cố</span>
-                <h3>Thi Công Giàn Khung Vững Chắc & Chuẩn Kỹ Thuật</h3>
-                <p>Sử dụng khung thép mạ kẽm/nhôm định hình chống gỉ sét cực cao, gia cố chắc chắn chống bão bùng. Kỹ thuật thi công tỉ mỉ chống thấm dột tuyệt đối cho mái nhà.</p>
-                <ul class="feature-list">
-                    <li>Khung dầm kiên cố, khả năng chịu lực bão tốt.</li>
-                    <li>Kỹ thuật gia cố chống thấm nước mái nhà 100%.</li>
-                    <li>Thi công thẩm mỹ, gọn gàng và an toàn.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- MỤC 3 (YÊU CẦU 2: ĐÃ SỬA CHỖ INVERTER & LINH KIỆN AN TOÀN) -->
-        <div class="feature-row">
-            <div class="feature-img-box">
-                <img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=700&q=80" alt="Inverter và Linh Kiện An Toàn">
-            </div>
-            <div class="feature-content">
-                <span class="badge-tag">Linh Kiện Chính Hãng</span>
-                <h3>Inverter & Phụ Kiện Chuẩn - Nguồn Điện Đủ Dòng, Ổn Định</h3>
-                <p>Cam kết cung cấp Inverter biến tần cùng toàn bộ phụ kiện, thiết bị điện chính hãng. Hệ thống đảm bảo nguồn điện đầu ra đủ dòng, vận hành êm ái, an toàn tuyệt đối cho toàn bộ thiết bị trong nhà.</p>
-                <ul class="feature-list">
-                    <li>Dòng điện đầu ra đủ công suất, ổn định và an toàn.</li>
-                    <li>Phụ kiện, dây dẫn, thiết bị đóng cắt chính hãng 100%.</li>
-                    <li>Lắp đặt linh hoạt theo ý muốn (có thể tích hợp thêm các bộ bảo vệ an toàn cao cấp như TTE-SAFE nếu khách hàng yêu cầu).</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- MỤC 4 -->
-        <div class="feature-row reverse">
-            <div class="feature-img-box">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80" alt="Theo dõi sản lượng điện qua điện thoại">
-            </div>
-            <div class="feature-content">
-                <span class="badge-tag">Công Nghệ 4.0</span>
-                <h3>Theo Dõi Sản Lượng Điện Qua Điện Thoại</h3>
-                <p>Chỉ với một chiếc điện thoại thông minh, bạn có thể dễ dàng kiểm tra số ký điện (kWh) sinh ra hàng ngày. Hệ thống tự động báo lỗi giúp việc quản lý vô cùng thuận tiện.</p>
-                <ul class="feature-list">
-                    <li>Giao diện Tiếng Việt thân thiện, dễ nhìn.</li>
-                    <li>Giám sát từ xa mọi lúc mọi nơi.</li>
-                    <li>Hỗ trợ kỹ thuật 24/7 từ Bình M Phát.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- TIÊU ĐỀ TIÊU CHUẨN THI CÔNG NGHIỆM THU -->
-        <div class="section-header" style="margin-top: 50px;">
-            <div class="section-title">QUY TRÌNH THI CÔNG CHUYÊN NGHIỆP</div>
-        </div>
-
-        <!-- BỐ CỤC 4 Ô BIỂU TƯỢNG SVG DÙNG ICON ĐỘC LẬP -->
-        <div class="gallery-grid">
-            <div class="gallery-card">
-                <div class="icon-wrapper">
-                    <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-                </div>
-                <div class="gallery-info">
-                    <h4>Lắp Đặt Pin Mặt Trời<br>Chuẩn Kỹ Thuật</h4>
-                </div>
-            </div>
-
-            <div class="gallery-card">
-                <div class="icon-wrapper">
-                    <svg class="icon-svg" viewBox="0 0 24 24"><path d="M7 2V13H10V22L17 11H14L17 2H7Z"/></svg>
-                </div>
-                <div class="gallery-info">
-                    <h4>Inverter & Linh Kiện<br>Đủ Dòng - An Toàn</h4>
-                </div>
-            </div>
-
-            <div class="gallery-card">
-                <div class="icon-wrapper">
-                    <svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 9H15V5H19V9ZM13 5V9H5V5H13ZM5 11H13V15H5V11ZM15 11H19V15H15V11ZM19 19H15V17H19V19ZM13 19H5V17H13V19Z"/></svg>
-                </div>
-                <div class="gallery-info">
-                    <h4>Gia Cố Khung Đỡ<br>Thép Siêu Bền</h4>
-                </div>
-            </div>
-
-            <div class="gallery-card">
-                <div class="icon-wrapper">
-                    <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 15.5L6 11.5L7.41 10.09L10 12.67L16.59 6.08L18 7.5L10 15.5Z"/></svg>
-                </div>
-                <div class="gallery-info">
-                    <h4>Công Trình Bàn Giao<br>Hoàn Hảo</h4>
-                </div>
-            </div>
-        </div>
-
-        <!-- YÊU CẦU 1: KHỐI VỀ CHÚNG TÔI LIỆK TÊ THEO HÀNG TỪNG MỤC -->
-        <div class="about-section">
-            <div class="about-header-box">
-                <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Mini" class="logo-mini">
-                <h3>Về Chúng Tôi - Bình M Phát</h3>
-            </div>
-            
-            <ul class="about-list">
-                <li><strong>Tư vấn chi tiết, nhiệt tình & hoàn toàn miễn phí:</strong> Giải đáp tận tâm mọi thắc mắc của khách hàng về kỹ thuật lẫn chi phí.</li>
-                <li><strong>Khảo sát thực tế trực tiếp:</strong> Đến tận nơi đo đạc, đánh giá hướng nắng và kết cấu mái để đưa ra phương án tối ưu nhất.</li>
-                <li><strong>Đóng góp ý kiến & giải pháp tốt nhất:</strong> Dựa trên nhu cầu sử dụng điện thực tế của từng gia đình/doanh nghiệp để thiết kế hệ thống vừa vặn, không lãng phí.</li>
-                <li><strong>Linh hoạt cấu hình & thiết bị:</strong> Sẵn sàng lắp đặt các phụ kiện, thiết bị bảo vệ an toàn cao cấp theo yêu cầu riêng của khách hàng.</li>
-                <li><strong>Trực tiếp thi công & theo sát công trình:</strong> Đảm bảo từng mối nối, đường dây và chân khung đều chuẩn kỹ thuật và đạt độ thẩm mỹ cao nhất.</li>
-                <li><strong>Đồng hành lâu dài:</strong> Hỗ trợ kỹ thuật nhanh chóng, bảo trì định kỳ giúp hệ thống luôn hoạt động đạt hiệu suất tối đa.</li>
+            <h3>Dịch Vụ TikTok</h3>
+            <ul>
+                <li>Tăng Follower kênh thật</li>
+                <li>Tăng Tim & View video</li>
+                <li>Tăng mắt Livestream</li>
             </ul>
         </div>
 
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <h2 style="font-size: 1.8rem; color: var(--gold);">LIÊN HỆ KHẢO SÁT & TƯ VẤN MIỄN PHÍ</h2>
-        
-        <div class="cta-box">
-            <h3>BÌNH M PHÁT - ĐIỆN MẶT TRỜI UY TÍN</h3>
-            <p>Bấm vào nút liên hệ bên dưới để nhận báo giá chi tiết lập tức:</p>
-            
-            <div class="btn-group">
-                <a href="tel:0355567466" class="btn btn-call">
-                    📞 HOTLINE: 0355 567 466
-                </a>
-                <a href="https://zalo.me/0945778133" target="_blank" class="btn btn-zalo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo Logo" class="zalo-icon-img">
-                    ZALO: 0945 778 133
-                </a>
+        <!-- FACEBOOK -->
+        <div class="platform-card">
+            <div class="platform-icon bg-facebook">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </div>
+            <h3>Dịch Vụ Facebook</h3>
+            <ul>
+                <li>Tăng Like bài viết & Page</li>
+                <li>Tăng Theo Dõi cá nhân</li>
+                <li>Tăng Mắt Live & Comment</li>
+            </ul>
         </div>
 
-        <div class="footer-brand">
-            <img src="https://i.ibb.co/nMbnGsQz/z8174989809600-9c965b5e1496de43bd18eb49a675b55d.jpg" alt="Logo Micro" class="logo-micro">
-            <span>© Bản quyền thuộc về Bình M Phát - Điện Mặt Trời.</span>
+        <!-- YOUTUBE -->
+        <div class="platform-card">
+            <div class="platform-icon bg-youtube">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <h3>Dịch Vụ YouTube</h3>
+            <ul>
+                <li>Tăng Subscribe (Đăng ký)</li>
+                <li>Tăng View video & Shorts</li>
+                <li>Tăng Giờ xem bật kiếm tiền</li>
+            </ul>
         </div>
-    </footer>
-
-    <!-- NÚT NỔI LIÊN HỆ -->
-    <div class="floating-container">
-        <a href="https://zalo.me/0945778133" target="_blank" class="float-btn float-zalo" title="Chat Zalo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo Logo" style="width: 35px; height: 35px; border-radius: 50%;">
-        </a>
-        <a href="tel:0355567466" class="float-btn float-call" title="Gọi Hotline">
-            <span style="font-size: 24px;">📞</span>
-        </a>
     </div>
 
-</body>
-</html>
+    <a href="https://zalo.me/0945778133" target="_blank" class="social-cta-btn">
+        🚀 TƯ VẤN & BÁO GIÁ LIÊN HỆ NGAY
+    </a>
+</div>
